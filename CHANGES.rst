@@ -3,6 +3,30 @@
 CHANGES
 =======
 
+1.2.9
+-----
+
+- Use Alpine Linux in docker-robottests instead of Debian
+
+1.2.8
+-----
+
+- Fix BashShell banner reading error in slow shells by adding banner_timeout
+  keyword argument
+
+- Fix hanging of the start in case in case BashShell value of tty_echo is True
+  while in reality the terminal echo is off
+
+1.2.7
+-----
+
+- Add stability tests documentation back
+
+- Improve logging by moving and requiring all logging to be under
+  'crl.interactivesessions' logger.
+
+- Make _RemoteProxy and _RecursiveProxy default timeouts configurable
+
 1.2.6
 -----
 
